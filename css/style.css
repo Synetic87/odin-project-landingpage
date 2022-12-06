@@ -1,11 +1,9 @@
-
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    
+/*     font-size: 18px; */
 }
 
 
@@ -83,32 +81,34 @@ button {
 }
 
 .section-one {
-    padding: 80px 100px;
+    padding: 80px 100px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
 }
 
 h2 {
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 }
 .cards {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: solid 1px red;
+    gap: 25px;
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100px;
+    width: 156px;
 }
 .card--img {
     width: 150px;
     height: 150px;
     border: solid 3px #3882F6;
     border-radius: 10px;
-    margin-bottom: 15px;
+    margin: 0 auto 15px;
 }
 .cardtext {
     font-size: 18px;
@@ -117,23 +117,62 @@ h2 {
 }
 
 .section-two {
+    padding: 100px 100px;
     background-color: #E5E7EB;
 }
 
+.container-zitat {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
 .zitat {
     font-size: 36px;
-    font-weight: 400;
+    font-weight: 300;
+    font-style: italic;
     color: #1F2937;
+
+}
+
+.zitat-author {
+    text-align: right;
+    font-weight: 700;
+}
+
+.section-three {
+    padding: 100px 150px;
 }
 
 button, .cta {
     background-color: #3882F6;
+    max-width: 80vw;
+    margin: 0 auto;
 }
 
+.cta {
+    padding:50px 150px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
 
+.cta-bold {
+    font-size: 24px;
+}
 
+button {
+    border: solid 2px white;
+    border-radius: 7px;
+    padding: 5px 40px;
+
+}
 
 footer {
     background-color: #1F2937;
     color: #F9FAF8;
+    padding: 50px 0px;
+    text-align: center;
 }
